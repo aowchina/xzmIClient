@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CROrderListFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIp-BF-xy3">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGu-ds-LCY">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.7803921568627451" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf8-Hp-Noo">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="La6-4w-gBH"/>
+                        <constraint firstAttribute="height" constant="37" id="fV7-Yq-Yk4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="立即付款" backgroundImage="qixiu_zixunkuang"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hmb-ht-wd6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-bO-oEG">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="RQt-aE-LO5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qcd-bO-oEG" secondAttribute="trailing" id="070-vn-5cE"/>
+                <constraint firstAttribute="trailing" secondItem="Rf8-Hp-Noo" secondAttribute="trailing" constant="16" id="1mm-X2-WKC"/>
+                <constraint firstItem="Rf8-Hp-Noo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5Yp-i0-f5j"/>
+                <constraint firstAttribute="bottom" secondItem="Qcd-bO-oEG" secondAttribute="bottom" constant="1" id="LPS-t4-E2t"/>
+                <constraint firstItem="bGu-ds-LCY" firstAttribute="centerY" secondItem="SIp-BF-xy3" secondAttribute="centerY" id="Utk-oP-Yox"/>
+                <constraint firstItem="SIp-BF-xy3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Z2w-sY-NqL"/>
+                <constraint firstItem="bGu-ds-LCY" firstAttribute="leading" secondItem="SIp-BF-xy3" secondAttribute="trailing" constant="30" id="jRC-lq-Brp"/>
+                <constraint firstItem="SIp-BF-xy3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="omN-nT-rLb"/>
+                <constraint firstItem="Qcd-bO-oEG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pNC-5p-qlO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="footerBtn" destination="Rf8-Hp-Noo" id="T4b-mB-F6J"/>
+                <outlet property="priceLabel" destination="bGu-ds-LCY" id="cFh-Od-gav"/>
+                <outlet property="totalLabel" destination="SIp-BF-xy3" id="5kA-5j-DX8"/>
+            </connections>
+            <point key="canvasLocation" x="-344.5" y="-26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qixiu_zixunkuang" width="54" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRAddAddressViewController">
+            <connections>
+                <outlet property="chooseCityBtn" destination="t7j-6y-cW7" id="YiH-xx-Lul"/>
+                <outlet property="detailAddress" destination="Ezw-b4-2iT" id="90C-IF-PdI"/>
+                <outlet property="phoneNumber" destination="Rnl-eQ-8AJ" id="Eb6-gX-SHb"/>
+                <outlet property="receiveName" destination="tJ1-oz-Ngc" id="vme-P3-klC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_renwu" translatesAutoresizingMaskIntoConstraints="NO" id="jm1-Td-KZc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="ZJf-dR-40L"/>
+                        <constraint firstAttribute="height" constant="22" id="mQs-DR-bc2"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入收货人姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tJ1-oz-Ngc">
+                    <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.87058823529999996" green="0.71764705880000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_dianhua" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-Yh-IPF">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="91W-rA-lVK"/>
+                        <constraint firstAttribute="height" constant="22" id="ffO-H8-JaF"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rnl-eQ-8AJ">
+                    <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.87058823529999996" green="0.71764705880000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7j-6y-cW7">
+                    <color key="backgroundColor" red="0.7843137255" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="请选择省市区"/>
+                    <connections>
+                        <action selector="chooseCity:" destination="-1" eventType="touchUpInside" id="nX5-4o-blb"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_dizhi" translatesAutoresizingMaskIntoConstraints="NO" id="RHC-Ao-JKj">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="8tL-LG-GWF"/>
+                        <constraint firstAttribute="height" constant="22" id="gc4-7y-vdb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q8-BI-YA2">
+                    <color key="backgroundColor" red="0.7843137255" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="pHh-Bo-UQ1"/>
+                    </constraints>
+                    <state key="normal" title="保存地址"/>
+                    <connections>
+                        <action selector="keepBtnClick:" destination="-1" eventType="touchUpInside" id="UJo-b5-i3M"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y16-bw-CbV">
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.71764705880000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1an-2Y-Usb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sq-x8-yHW">
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.71764705880000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ilU-zt-QME"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入详细地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ezw-b4-2iT">
+                    <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.87058823529999996" green="0.71764705880000002" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rnl-eQ-8AJ" firstAttribute="leading" secondItem="BIQ-Yh-IPF" secondAttribute="trailing" constant="8" id="05J-pX-L4p"/>
+                <constraint firstItem="t7j-6y-cW7" firstAttribute="leading" secondItem="RHC-Ao-JKj" secondAttribute="trailing" constant="8" id="0EF-6m-xfz"/>
+                <constraint firstItem="BIQ-Yh-IPF" firstAttribute="top" secondItem="y16-bw-CbV" secondAttribute="bottom" constant="15" id="2V8-6X-9gC"/>
+                <constraint firstItem="Rnl-eQ-8AJ" firstAttribute="top" secondItem="BIQ-Yh-IPF" secondAttribute="top" id="4xB-KJ-sTa"/>
+                <constraint firstItem="RHC-Ao-JKj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="B6v-Mp-nQD"/>
+                <constraint firstAttribute="trailing" secondItem="y16-bw-CbV" secondAttribute="trailing" id="BY9-Bn-obl"/>
+                <constraint firstItem="4q8-BI-YA2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="DAO-9L-9r1"/>
+                <constraint firstAttribute="trailing" secondItem="Rnl-eQ-8AJ" secondAttribute="trailing" constant="14" id="Drf-12-57n"/>
+                <constraint firstItem="Ezw-b4-2iT" firstAttribute="trailing" secondItem="Rnl-eQ-8AJ" secondAttribute="trailing" id="F3i-gW-0D8"/>
+                <constraint firstItem="RHC-Ao-JKj" firstAttribute="top" secondItem="1sq-x8-yHW" secondAttribute="bottom" constant="15" id="Gu7-EW-3XO"/>
+                <constraint firstItem="y16-bw-CbV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KfU-Ac-ab4"/>
+                <constraint firstItem="4q8-BI-YA2" firstAttribute="top" secondItem="Ezw-b4-2iT" secondAttribute="bottom" constant="50" id="LqV-qh-zbm"/>
+                <constraint firstItem="Ezw-b4-2iT" firstAttribute="top" secondItem="t7j-6y-cW7" secondAttribute="bottom" constant="8" id="US8-Ae-GXf"/>
+                <constraint firstItem="1sq-x8-yHW" firstAttribute="top" secondItem="BIQ-Yh-IPF" secondAttribute="bottom" constant="5" id="X3Y-Jq-tqg"/>
+                <constraint firstAttribute="trailing" secondItem="4q8-BI-YA2" secondAttribute="trailing" constant="16" id="ZAL-8a-Yfm"/>
+                <constraint firstItem="jm1-Td-KZc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="baV-uO-fH8"/>
+                <constraint firstItem="tJ1-oz-Ngc" firstAttribute="top" secondItem="jm1-Td-KZc" secondAttribute="top" id="eTF-Kv-txo"/>
+                <constraint firstItem="t7j-6y-cW7" firstAttribute="top" secondItem="1sq-x8-yHW" secondAttribute="bottom" constant="8" id="g2j-fy-rWS"/>
+                <constraint firstItem="Ezw-b4-2iT" firstAttribute="height" secondItem="Rnl-eQ-8AJ" secondAttribute="height" id="gMf-KQ-P1D"/>
+                <constraint firstItem="BIQ-Yh-IPF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="hhJ-FF-xtq"/>
+                <constraint firstItem="tJ1-oz-Ngc" firstAttribute="leading" secondItem="jm1-Td-KZc" secondAttribute="trailing" constant="8" id="i05-tr-B2i"/>
+                <constraint firstItem="jm1-Td-KZc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="jpX-xk-6aE"/>
+                <constraint firstItem="y16-bw-CbV" firstAttribute="top" secondItem="jm1-Td-KZc" secondAttribute="bottom" constant="5" id="loU-nX-EGZ"/>
+                <constraint firstAttribute="trailing" secondItem="1sq-x8-yHW" secondAttribute="trailing" id="mJZ-po-05y"/>
+                <constraint firstItem="Ezw-b4-2iT" firstAttribute="leading" secondItem="t7j-6y-cW7" secondAttribute="leading" id="n0X-1Z-C4U"/>
+                <constraint firstAttribute="trailing" secondItem="tJ1-oz-Ngc" secondAttribute="trailing" constant="14" id="vUN-Y2-uBU"/>
+                <constraint firstItem="1sq-x8-yHW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yJ9-QE-4LQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-785" y="-212"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="address_dianhua" width="22" height="22"/>
+        <image name="address_dizhi" width="22" height="22"/>
+        <image name="address_renwu" width="22" height="22"/>
+    </resources>
+</document>

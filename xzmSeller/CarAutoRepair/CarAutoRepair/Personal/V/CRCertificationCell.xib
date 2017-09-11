@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CRCertificationCell" id="KGk-i7-Jjw" customClass="CRCertificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfU-dI-SDA">
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hWb-Nl-Eu7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-J3-KYT">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="pXa-Am-d1n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qixiu_jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="PUD-Cq-BgE">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="7Eh-7F-gSz"/>
+                            <constraint firstAttribute="width" constant="8" id="er4-8c-rXN"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="h1z-uq-qFN">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="ASZ-ur-vg7"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                <color key="value" red="0.83529411760000005" green="0.84313725490000002" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TfU-dI-SDA" secondAttribute="bottom" id="1Wg-6f-hOC"/>
+                    <constraint firstItem="A0G-J3-KYT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="3Vi-Ta-Zz2"/>
+                    <constraint firstItem="h1z-uq-qFN" firstAttribute="centerY" secondItem="A0G-J3-KYT" secondAttribute="centerY" id="4mG-2j-bmT"/>
+                    <constraint firstItem="TfU-dI-SDA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G9v-N1-ZYj"/>
+                    <constraint firstItem="PUD-Cq-BgE" firstAttribute="centerY" secondItem="A0G-J3-KYT" secondAttribute="centerY" id="GkH-73-J10"/>
+                    <constraint firstItem="PUD-Cq-BgE" firstAttribute="leading" secondItem="h1z-uq-qFN" secondAttribute="trailing" constant="5" id="R4L-Ix-v7z"/>
+                    <constraint firstItem="A0G-J3-KYT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-1" id="dMl-2v-B42"/>
+                    <constraint firstAttribute="trailing" secondItem="PUD-Cq-BgE" secondAttribute="trailing" constant="8" id="oPa-VH-E9P"/>
+                    <constraint firstItem="h1z-uq-qFN" firstAttribute="leading" secondItem="A0G-J3-KYT" secondAttribute="trailing" constant="2" id="sbo-4j-BuG"/>
+                    <constraint firstAttribute="trailing" secondItem="TfU-dI-SDA" secondAttribute="trailing" id="wdj-Jp-nJP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailTextF" destination="h1z-uq-qFN" id="aEq-D1-lTd"/>
+                <outlet property="nameLabel" destination="A0G-J3-KYT" id="5ws-1P-w4E"/>
+                <outlet property="rightImageV" destination="PUD-Cq-BgE" id="UzN-9F-sqZ"/>
+            </connections>
+            <point key="canvasLocation" x="-812" y="-24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qixiu_jiantou" width="8" height="15"/>
+    </resources>
+</document>

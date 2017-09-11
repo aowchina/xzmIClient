@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KTPayBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDB-ZQ-Lfc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5ni-2w-Gbs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.69019607839999997" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qgu-Ge-j8k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1I-Fg-zqr">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Jhl-0j-bP5"/>
+                        <constraint firstAttribute="width" constant="80" id="YxN-wW-OmM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-55" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="-25" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="支付宝支付" image="qixiu_icon_zhifubao">
+                        <color key="titleColor" red="0.69019607839999997" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="aliPayBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jd9-Gf-O9b"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIl-Ow-kmf">
+                    <color key="backgroundColor" red="0.69019607839999997" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="984-Hm-swa"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skin_zhifufangshi" translatesAutoresizingMaskIntoConstraints="NO" id="Xzm-Ro-wRJ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="h6h-fV-Sbk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-p1-zyT">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="mz6-bM-1sI"/>
+                        <constraint firstAttribute="height" constant="80" id="oAl-TQ-uNx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-55" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="-25" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="微信支付" image="qixiu_icon_weixin">
+                        <color key="titleColor" red="0.69019607839999997" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="weChatBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kdN-J9-jAj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw8-cU-6LK">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="55q-gV-4fA"/>
+                        <constraint firstAttribute="height" constant="80" id="8yn-SW-BtP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-55" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="-25" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="余额支付" image="qiuxiu_icon_yue">
+                        <color key="titleColor" red="0.69019607839999997" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="balanceBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gMj-YS-2Ii"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FYb-p1-zyT" firstAttribute="leading" secondItem="fw8-cU-6LK" secondAttribute="trailing" constant="25" id="2oL-8i-Kxv"/>
+                <constraint firstItem="Xzm-Ro-wRJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="9Xm-rr-z9V"/>
+                <constraint firstItem="VDB-ZQ-Lfc" firstAttribute="top" secondItem="dIl-Ow-kmf" secondAttribute="bottom" constant="1" id="Auy-7p-Duc"/>
+                <constraint firstAttribute="trailing" secondItem="dIl-Ow-kmf" secondAttribute="trailing" id="O77-k9-0nS"/>
+                <constraint firstItem="VDB-ZQ-Lfc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OyW-zq-aGL"/>
+                <constraint firstAttribute="bottom" secondItem="VDB-ZQ-Lfc" secondAttribute="bottom" constant="5" id="Sml-mb-Oeg"/>
+                <constraint firstItem="fw8-cU-6LK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UlW-xH-mqM"/>
+                <constraint firstItem="Xzm-Ro-wRJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZCN-2y-2eq"/>
+                <constraint firstItem="FYb-p1-zyT" firstAttribute="centerY" secondItem="fw8-cU-6LK" secondAttribute="centerY" id="b3g-ow-eqa"/>
+                <constraint firstAttribute="trailing" secondItem="Xzm-Ro-wRJ" secondAttribute="trailing" id="cHH-Cw-b7K"/>
+                <constraint firstItem="fw8-cU-6LK" firstAttribute="leading" secondItem="n1I-Fg-zqr" secondAttribute="trailing" constant="25" id="gXT-Mh-euB"/>
+                <constraint firstAttribute="trailing" secondItem="VDB-ZQ-Lfc" secondAttribute="trailing" id="gjf-H4-V3y"/>
+                <constraint firstItem="fw8-cU-6LK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kJS-I2-EgF"/>
+                <constraint firstItem="dIl-Ow-kmf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uUK-CU-NxM"/>
+                <constraint firstItem="n1I-Fg-zqr" firstAttribute="centerY" secondItem="fw8-cU-6LK" secondAttribute="centerY" id="wHG-Ea-eqd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-765" y="-44"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qiuxiu_icon_yue" width="52" height="52"/>
+        <image name="qixiu_icon_weixin" width="52" height="52"/>
+        <image name="qixiu_icon_zhifubao" width="53" height="53"/>
+        <image name="skin_zhifufangshi" width="344" height="15"/>
+    </resources>
+</document>

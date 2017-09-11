@@ -1,0 +1,48 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, ’10.0’
+
+#包含实时语音版本
+#pod 'Hyphenate'
+#pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+
+
+#集成环信Lite版SDK
+pod 'HyphenateLite'
+#集成环信EaseUI
+pod 'EaseUILite', :git =>'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+pod 'MBProgressHUD'
+pod 'SWTableViewCell'
+pod 'CTAssetsPickerController'
+
+pod 'ShareSDK3'
+pod 'MOBFoundation'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+pod 'JPush'
+
+pod 'FDFullscreenPopGesture', '~> 1.1'
+
+
+target 'CarAutoRepair' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for CarAutoRepair
+
+  target 'CarAutoRepairTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CarAutoRepairUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carDepartmentCollectionViewCell" id="gTV-IL-0wX" customClass="CarDepartmentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qixiu_beijingPsesonal" translatesAutoresizingMaskIntoConstraints="NO" id="6p7-YK-n2J">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="124"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R82-Wd-Z4d">
+                        <rect key="frame" x="0.0" y="129" width="152" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5Qf-1F-eRk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6p7-YK-n2J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HG5-gK-CeD"/>
+                <constraint firstAttribute="trailing" secondItem="R82-Wd-Z4d" secondAttribute="trailing" id="NkG-mG-yw6"/>
+                <constraint firstItem="R82-Wd-Z4d" firstAttribute="top" secondItem="6p7-YK-n2J" secondAttribute="bottom" constant="5" id="UIa-Ra-5ap"/>
+                <constraint firstAttribute="bottom" secondItem="R82-Wd-Z4d" secondAttribute="bottom" constant="5" id="lVH-yE-llG"/>
+                <constraint firstAttribute="trailing" secondItem="6p7-YK-n2J" secondAttribute="trailing" id="pxr-co-fJ7"/>
+                <constraint firstItem="6p7-YK-n2J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tnS-Eg-miQ"/>
+                <constraint firstItem="R82-Wd-Z4d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zfS-hu-CHW"/>
+            </constraints>
+            <size key="customSize" width="152" height="154"/>
+            <connections>
+                <outlet property="serialImageView" destination="6p7-YK-n2J" id="LsY-po-Y2H"/>
+                <outlet property="serialLabel" destination="R82-Wd-Z4d" id="Bm0-8P-htX"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="104"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="qixiu_beijingPsesonal" width="375" height="190"/>
+    </resources>
+</document>

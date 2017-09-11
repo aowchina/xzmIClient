@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CROrderDetailBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-yM-WQo">
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即支付">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="payBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="OJo-HG-bRP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnj-b3-9rH">
+                    <color key="backgroundColor" red="0.54509803921568623" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="取消订单"/>
+                    <connections>
+                        <action selector="cancelBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="loI-Vx-U6K"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-OE-alT">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-cy-KWa">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-zj-c1k">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qMc-N1-b9j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iqs-yM-WQo" secondAttribute="bottom" id="1NB-0Z-DEz"/>
+                <constraint firstItem="UKa-cy-KWa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1sA-qc-sJ9"/>
+                <constraint firstAttribute="trailing" secondItem="xNm-zj-c1k" secondAttribute="trailing" id="5I4-Pl-rTb"/>
+                <constraint firstItem="UKa-cy-KWa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="F17-9u-ehS"/>
+                <constraint firstItem="iqs-yM-WQo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.27" id="KEe-Ca-d2W"/>
+                <constraint firstItem="ByA-OE-alT" firstAttribute="centerY" secondItem="UKa-cy-KWa" secondAttribute="centerY" id="Lck-E3-dh0"/>
+                <constraint firstItem="iqs-yM-WQo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="U2V-VF-K7a"/>
+                <constraint firstItem="Dnj-b3-9rH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="XLK-T5-NJl"/>
+                <constraint firstItem="xNm-zj-c1k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="Xvm-Sl-tQ9"/>
+                <constraint firstItem="iqs-yM-WQo" firstAttribute="leading" secondItem="Dnj-b3-9rH" secondAttribute="trailing" id="h70-0D-kyl"/>
+                <constraint firstAttribute="bottom" secondItem="Dnj-b3-9rH" secondAttribute="bottom" id="mOO-kR-igE"/>
+                <constraint firstItem="Dnj-b3-9rH" firstAttribute="width" secondItem="iqs-yM-WQo" secondAttribute="width" id="ovk-yx-P3Q"/>
+                <constraint firstItem="xNm-zj-c1k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rMF-li-hU1"/>
+                <constraint firstItem="ByA-OE-alT" firstAttribute="leading" secondItem="UKa-cy-KWa" secondAttribute="trailing" id="x7Y-V6-JOU"/>
+                <constraint firstAttribute="trailing" secondItem="iqs-yM-WQo" secondAttribute="trailing" id="zFa-u2-jwW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="Dnj-b3-9rH" id="4Vd-Kn-obf"/>
+                <outlet property="payBtn" destination="iqs-yM-WQo" id="chI-wj-4JF"/>
+                <outlet property="totalPrice" destination="ByA-OE-alT" id="8zF-hM-XNC"/>
+            </connections>
+            <point key="canvasLocation" x="-595" y="-299"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ucV-ve-MXm">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-406" y="-108"/>
+        </label>
+    </objects>
+</document>

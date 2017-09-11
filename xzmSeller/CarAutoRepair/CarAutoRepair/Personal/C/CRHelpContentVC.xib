@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRHelpContentVC">
+            <connections>
+                <outlet property="textV" destination="9X2-B1-fUm" id="dGe-Iu-NMe"/>
+                <outlet property="tiLabel" destination="EPs-Se-mWd" id="pxh-Ye-pFz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPs-Se-mWd">
+                    <rect key="frame" x="10" y="80" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9X2-B1-fUm">
+                    <rect key="frame" x="15" y="116" width="345" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EPs-Se-mWd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Cy-Hv-nV8"/>
+                <constraint firstAttribute="trailing" secondItem="9X2-B1-fUm" secondAttribute="trailing" constant="15" id="LcY-ad-AZh"/>
+                <constraint firstAttribute="bottom" secondItem="9X2-B1-fUm" secondAttribute="bottom" constant="15" id="QHw-bb-cay"/>
+                <constraint firstAttribute="trailing" secondItem="EPs-Se-mWd" secondAttribute="trailing" constant="10" id="W0m-CI-WWE"/>
+                <constraint firstItem="9X2-B1-fUm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ZHY-wM-PBz"/>
+                <constraint firstItem="EPs-Se-mWd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="dnd-nJ-Uuw"/>
+                <constraint firstItem="9X2-B1-fUm" firstAttribute="top" secondItem="EPs-Se-mWd" secondAttribute="bottom" constant="15" id="qWG-FJ-Zd4"/>
+                <constraint firstItem="EPs-Se-mWd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="zQd-OL-u41"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

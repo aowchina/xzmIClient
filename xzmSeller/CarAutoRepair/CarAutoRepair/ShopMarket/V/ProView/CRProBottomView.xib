@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CRProBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZn-UD-6h9">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="7qV-EF-laa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即购买" backgroundImage="qixiu_lijigoumaibnbeijing">
+                        <color key="titleColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buynowBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dgi-KP-PHa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsB-c1-rvx">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="MBa-JV-61M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="客服" image="qixiu_kefu">
+                        <color key="titleColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="kefuBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ekZ-I2-Zy4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tu-8U-UGm">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-23" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="店铺" image="qixiu_dianpuproIcon">
+                        <color key="titleColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dianpuBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hU8-5h-5rV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-xB-7jM">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-23" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="收藏" image="qixiu_shoucangproIcon">
+                        <color key="titleColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="soucangBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="mAu-ZG-JSF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chu-9n-nKG">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="18" minY="-20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="电话" image="qixiu_dianhuaproIcon">
+                        <color key="titleColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6IH-XA-gcp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NsB-c1-rvx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3fy-f5-ulu"/>
+                <constraint firstItem="NsB-c1-rvx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Bj-PY-JgA"/>
+                <constraint firstItem="1Tu-8U-UGm" firstAttribute="width" secondItem="NsB-c1-rvx" secondAttribute="width" id="Byu-3V-0ZA"/>
+                <constraint firstItem="1Tu-8U-UGm" firstAttribute="centerY" secondItem="NsB-c1-rvx" secondAttribute="centerY" id="Dpz-Tk-Gov"/>
+                <constraint firstItem="Usv-xB-7jM" firstAttribute="height" secondItem="NsB-c1-rvx" secondAttribute="height" id="F4E-1D-hB8"/>
+                <constraint firstItem="chu-9n-nKG" firstAttribute="width" secondItem="NsB-c1-rvx" secondAttribute="width" id="F7h-dN-8sd"/>
+                <constraint firstItem="1Tu-8U-UGm" firstAttribute="height" secondItem="NsB-c1-rvx" secondAttribute="height" id="Mxw-kI-Z4l"/>
+                <constraint firstItem="chu-9n-nKG" firstAttribute="centerY" secondItem="NsB-c1-rvx" secondAttribute="centerY" id="O3J-3f-gbY"/>
+                <constraint firstAttribute="bottom" secondItem="NsB-c1-rvx" secondAttribute="bottom" id="PRX-bu-C9m"/>
+                <constraint firstItem="chu-9n-nKG" firstAttribute="leading" secondItem="Usv-xB-7jM" secondAttribute="trailing" id="QZE-aq-2sP"/>
+                <constraint firstItem="Usv-xB-7jM" firstAttribute="width" secondItem="NsB-c1-rvx" secondAttribute="width" id="UGf-xo-Ux8"/>
+                <constraint firstAttribute="bottom" secondItem="FZn-UD-6h9" secondAttribute="bottom" id="a1X-cn-ZPl"/>
+                <constraint firstItem="chu-9n-nKG" firstAttribute="height" secondItem="NsB-c1-rvx" secondAttribute="height" id="al3-VQ-dYR"/>
+                <constraint firstItem="Usv-xB-7jM" firstAttribute="leading" secondItem="1Tu-8U-UGm" secondAttribute="trailing" id="g2F-32-euK"/>
+                <constraint firstItem="FZn-UD-6h9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k6u-Bx-j1S"/>
+                <constraint firstItem="1Tu-8U-UGm" firstAttribute="leading" secondItem="NsB-c1-rvx" secondAttribute="trailing" id="mA0-up-ETx"/>
+                <constraint firstAttribute="trailing" secondItem="FZn-UD-6h9" secondAttribute="trailing" id="mcB-n6-CDS"/>
+                <constraint firstItem="Usv-xB-7jM" firstAttribute="centerY" secondItem="NsB-c1-rvx" secondAttribute="centerY" id="rnQ-GV-uha"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collecBtn" destination="Usv-xB-7jM" id="YOj-h3-PnU"/>
+            </connections>
+            <point key="canvasLocation" x="-337" y="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qixiu_dianhuaproIcon" width="22" height="23"/>
+        <image name="qixiu_dianpuproIcon" width="25" height="23"/>
+        <image name="qixiu_kefu" width="24" height="23"/>
+        <image name="qixiu_lijigoumaibnbeijing" width="130" height="49"/>
+        <image name="qixiu_shoucangproIcon" width="26" height="23"/>
+    </resources>
+</document>

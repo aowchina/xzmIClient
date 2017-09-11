@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRWalletViewController">
+            <connections>
+                <outlet property="aliBtn" destination="eG8-aq-lWO" id="q2x-aB-AzR"/>
+                <outlet property="backView" destination="EvP-Qq-NyF" id="dvl-XI-5mP"/>
+                <outlet property="line" destination="7sW-vE-s4o" id="yR6-le-s4T"/>
+                <outlet property="moneyLabel" destination="bWu-kM-7ge" id="EIz-U0-nQ4"/>
+                <outlet property="noView" destination="q6q-1R-GP9" id="yL4-3X-IPU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weChatBtn" destination="wcl-i8-SyO" id="wGo-JW-AXI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用余额（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXJ-Xw-zkw">
+                    <rect key="frame" x="116" y="90" width="143" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.7803921568627451" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWu-kM-7ge">
+                    <rect key="frame" x="166.5" y="126" width="42" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <color key="NSColor" red="0.7803921568627451" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="KaiTi"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-2k-oPL">
+                    <rect key="frame" x="0.0" y="171" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Jt6-JA-WIX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-wz-92g">
+                    <rect key="frame" x="32" y="232" width="311" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="vqM-wO-deV"/>
+                    </constraints>
+                    <state key="normal" title="提现" backgroundImage="address_wdqb_tixiananniu"/>
+                    <connections>
+                        <action selector="withdrawalBtnClick:" destination="-1" eventType="touchUpInside" id="ybp-vz-EDo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近成交记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuM-fM-r09">
+                    <rect key="frame" x="15" y="299" width="74" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sW-vE-s4o">
+                    <rect key="frame" x="15" y="324" width="360" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="lrx-e7-Xte"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-Qq-NyF">
+                    <rect key="frame" x="132.5" y="365" width="110" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qixiu_wdqb_icon" translatesAutoresizingMaskIntoConstraints="NO" id="q6q-1R-GP9">
+                            <rect key="frame" x="5" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="6nd-e2-M2e"/>
+                                <constraint firstAttribute="width" constant="100" id="tgh-Vc-efQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有成交记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjB-XF-myD">
+                            <rect key="frame" x="-6.5" y="130" width="123" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="9HP-Kf-zcj"/>
+                        <constraint firstAttribute="height" constant="150" id="HJd-MT-jhQ"/>
+                        <constraint firstItem="q6q-1R-GP9" firstAttribute="centerX" secondItem="EvP-Qq-NyF" secondAttribute="centerX" id="jyt-Po-5xk"/>
+                        <constraint firstItem="q6q-1R-GP9" firstAttribute="top" secondItem="EvP-Qq-NyF" secondAttribute="top" id="qQR-86-omL"/>
+                        <constraint firstItem="cjB-XF-myD" firstAttribute="top" secondItem="q6q-1R-GP9" secondAttribute="bottom" constant="30" id="wfw-jm-9E5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG8-aq-lWO">
+                    <rect key="frame" x="207.5" y="190" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="支付宝提现" image="qixiu_weixuanzhong_select">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="qixiu_xuanzhong_seleted"/>
+                    <connections>
+                        <action selector="AliWithdrawalAction:" destination="-1" eventType="touchUpInside" id="O3M-HU-lOx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbb-IN-JLh">
+                    <rect key="frame" x="182.5" y="187" width="10" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="VPQ-ba-816"/>
+                        <constraint firstAttribute="height" constant="25" id="YWQ-nM-e72"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcl-i8-SyO">
+                    <rect key="frame" x="89.5" y="190" width="78" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="微信提现" image="qixiu_weixuanzhong_select">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="qixiu_xuanzhong_seleted"/>
+                    <connections>
+                        <action selector="weChatWithdrawalAction:" destination="-1" eventType="touchUpInside" id="1VX-ED-OCo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7sW-vE-s4o" firstAttribute="top" secondItem="OuM-fM-r09" secondAttribute="bottom" constant="10" id="3iA-rW-mBR"/>
+                <constraint firstItem="hbb-IN-JLh" firstAttribute="top" secondItem="CGh-2k-oPL" secondAttribute="bottom" constant="15" id="5TA-zH-S8w"/>
+                <constraint firstItem="cjB-XF-myD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8ZK-t1-jkl"/>
+                <constraint firstItem="EvP-Qq-NyF" firstAttribute="top" secondItem="7sW-vE-s4o" secondAttribute="bottom" constant="40" id="BZO-hB-Pt9"/>
+                <constraint firstItem="7sW-vE-s4o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Cx0-2P-tf5"/>
+                <constraint firstAttribute="trailing" secondItem="Dj9-wz-92g" secondAttribute="trailing" constant="32" id="Cx8-Sj-fPH"/>
+                <constraint firstItem="AXJ-Xw-zkw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="HDc-hw-J4h"/>
+                <constraint firstItem="CGh-2k-oPL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NFG-Fo-T8z"/>
+                <constraint firstItem="eG8-aq-lWO" firstAttribute="leading" secondItem="hbb-IN-JLh" secondAttribute="trailing" constant="15" id="Q2B-qS-aW3"/>
+                <constraint firstItem="OuM-fM-r09" firstAttribute="top" secondItem="Dj9-wz-92g" secondAttribute="bottom" constant="25" id="Ra8-Yf-jPb"/>
+                <constraint firstItem="AXJ-Xw-zkw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TEi-R1-VNH"/>
+                <constraint firstItem="Dj9-wz-92g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="V8v-Bg-5ra"/>
+                <constraint firstItem="Dj9-wz-92g" firstAttribute="top" secondItem="CGh-2k-oPL" secondAttribute="bottom" constant="60" id="WB1-fQ-Tfx"/>
+                <constraint firstItem="CGh-2k-oPL" firstAttribute="top" secondItem="bWu-kM-7ge" secondAttribute="bottom" constant="25" id="bGe-cD-EHi"/>
+                <constraint firstItem="hbb-IN-JLh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eIW-3U-JcA"/>
+                <constraint firstAttribute="trailing" secondItem="CGh-2k-oPL" secondAttribute="trailing" id="gIF-xg-F98"/>
+                <constraint firstItem="hbb-IN-JLh" firstAttribute="leading" secondItem="wcl-i8-SyO" secondAttribute="trailing" constant="15" id="i57-UC-Yol"/>
+                <constraint firstItem="bWu-kM-7ge" firstAttribute="top" secondItem="AXJ-Xw-zkw" secondAttribute="bottom" constant="12" id="jT6-dE-SdI"/>
+                <constraint firstItem="OuM-fM-r09" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="jWW-ZH-KZZ"/>
+                <constraint firstAttribute="trailing" secondItem="7sW-vE-s4o" secondAttribute="trailing" id="jmW-nX-UvG"/>
+                <constraint firstItem="EvP-Qq-NyF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kpp-94-pv4"/>
+                <constraint firstItem="eG8-aq-lWO" firstAttribute="centerY" secondItem="hbb-IN-JLh" secondAttribute="centerY" id="lbZ-xT-a6W"/>
+                <constraint firstItem="bWu-kM-7ge" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qFd-Ew-rjB"/>
+                <constraint firstItem="wcl-i8-SyO" firstAttribute="centerY" secondItem="hbb-IN-JLh" secondAttribute="centerY" id="uG8-ts-ZLm"/>
+            </constraints>
+            <point key="canvasLocation" x="-1200" y="-166"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="address_wdqb_tixiananniu" width="313" height="42"/>
+        <image name="qixiu_wdqb_icon" width="100" height="100"/>
+        <image name="qixiu_weixuanzhong_select" width="12" height="12"/>
+        <image name="qixiu_xuanzhong_seleted" width="12" height="12"/>
+    </resources>
+</document>

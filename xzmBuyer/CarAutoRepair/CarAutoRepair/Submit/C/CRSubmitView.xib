@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CRSubmitView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iit-GH-fEz">
+                    <rect key="frame" x="0.0" y="450" width="375" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabu_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dry-ap-yEg">
+                            <rect key="frame" x="159" y="177" width="57" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dry-ap-yEg" secondAttribute="height" multiplier="57:68" id="NSd-Z9-PuG"/>
+                                <constraint firstAttribute="width" constant="57" id="Wr4-2f-9RY"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1X-SE-yAl">
+                            <rect key="frame" x="146.5" y="59" width="82" height="82"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="AiH-qd-P3Z"/>
+                                <constraint firstAttribute="height" constant="82" id="PFz-m7-6gH"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="qiugou_qiugou">
+                                <color key="titleColor" red="0.7843137255" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="salePeijianAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="drt-PI-9bX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dry-ap-yEg" secondAttribute="bottom" constant="-45" id="BJJ-c1-ec1"/>
+                        <constraint firstItem="g1X-SE-yAl" firstAttribute="centerX" secondItem="iit-GH-fEz" secondAttribute="centerX" id="Pci-DM-G5X"/>
+                        <constraint firstItem="g1X-SE-yAl" firstAttribute="centerY" secondItem="iit-GH-fEz" secondAttribute="centerY" id="WBY-d5-W4v"/>
+                        <constraint firstAttribute="height" constant="200" id="n0o-ni-H6o"/>
+                        <constraint firstItem="dry-ap-yEg" firstAttribute="centerX" secondItem="iit-GH-fEz" secondAttribute="centerX" id="nM1-uJ-2km"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIE-q7-dfe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-P8-bg3">
+                            <rect key="frame" x="170" y="34" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ky4-P8-bg3" firstAttribute="centerX" secondItem="pIE-q7-dfe" secondAttribute="centerX" id="8Ex-PY-uUn"/>
+                        <constraint firstAttribute="height" constant="64" id="ang-qM-4Ae"/>
+                        <constraint firstItem="ky4-P8-bg3" firstAttribute="centerY" secondItem="pIE-q7-dfe" secondAttribute="centerY" constant="12" id="sWe-ZH-S8i"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ti-FA-zzk">
+                    <rect key="frame" x="0.0" y="64" width="375" height="386"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iit-GH-fEz" secondAttribute="bottom" id="DRG-qh-vD7"/>
+                <constraint firstItem="5Ti-FA-zzk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GR3-nw-1Fq"/>
+                <constraint firstAttribute="trailing" secondItem="5Ti-FA-zzk" secondAttribute="trailing" id="JU0-Vz-KGe"/>
+                <constraint firstItem="pIE-q7-dfe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LsV-iw-G6h"/>
+                <constraint firstItem="5Ti-FA-zzk" firstAttribute="top" secondItem="pIE-q7-dfe" secondAttribute="bottom" id="SWv-6o-K3H"/>
+                <constraint firstAttribute="trailing" secondItem="pIE-q7-dfe" secondAttribute="trailing" id="Zmf-aN-smK"/>
+                <constraint firstAttribute="trailing" secondItem="iit-GH-fEz" secondAttribute="trailing" id="aIn-bZ-Odt"/>
+                <constraint firstItem="iit-GH-fEz" firstAttribute="top" secondItem="5Ti-FA-zzk" secondAttribute="bottom" id="cXt-9U-YGh"/>
+                <constraint firstItem="pIE-q7-dfe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gZv-Ia-zaz"/>
+                <constraint firstItem="iit-GH-fEz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gaG-Bj-ShC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="5Ti-FA-zzk" id="qcR-Rg-XPb"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="-55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fabu_icon" width="57" height="68"/>
+        <image name="qiugou_qiugou" width="82" height="82"/>
+    </resources>
+</document>
